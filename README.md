@@ -1,50 +1,84 @@
-# Morada · Imobiliária
-Landing page responsiva em React e Vite, criada para apresentação acadêmica.
+# 🏠 Morada · Imobiliária
 
-## Executar
-Requisito: Node.js 22.
+## Identificação Acadêmica
+
+* **Instituição:** Senac Taguatinga
+* **Curso:** Técnico de Desenvolvimento de Sistema
+* **Disciplina:** Projeto Entregador
+* **Orientador:** Profº Hudson Neves
+
+## 📌 Sobre o Projeto
+
+Landing Page responsiva para uma imobiliária, desenvolvida com **React e Vite** para apresentação acadêmica. A marca, imóveis e valores apresentados são fictícios.
+
+## 🚀 Funcionalidades
+
+* Busca de imóveis para comprar ou alugar
+* Filtros por bairro, tipo e preço
+* Favoritos durante a sessão
+* Detalhes dos imóveis em modal
+* Formulário demonstrativo
+* Menu responsivo
+* Layout para celular, tablet e desktop
+
+## 🛠️ Tecnologias
+
+* React
+* Vite
+* JavaScript
+* CSS
+* GitHub Pages
+
+## ▶️ Como Executar
+
+**Requisito:** Node.js 22.
+
 ```bash
 npm install
 npm run dev
 ```
-Abra o endereço indicado no terminal. Para conferir a versão de produção:
+
+Para testar a versão de produção:
+
 ```bash
 npm run build
 npm run preview
 ```
 
-## Funcionalidades
-- Busca por finalidade (comprar/alugar), bairro, tipo e preço máximo.
-- Filtros de casas, apartamentos e favoritos.
-- Detalhes de imóveis em janela modal, com fechamento por Escape.
-- Botão de interesse que preenche a mensagem no formulário.
-- Formulário demonstrativo com validação nativa.
-- Menu para celular, links internos, foco visível e suporte a movimento reduzido.
-- Layout adaptado para celular, tablet e desktop.
+## 🌐 Publicação
 
-Os favoritos existem apenas durante a sessão da página. Não há backend; o formulário não envia nem armazena dados. A marca, os imóveis e os preços são fictícios. Fotografias ilustrativas remotas do Unsplash; fontes do Google Fonts, com fontes locais de fallback.
+O projeto pode ser publicado no **GitHub Pages** utilizando GitHub Actions.
 
-## Publicar no GitHub Pages
-1. Crie um repositório público no GitHub.
-2. Na pasta do projeto, execute (substitua USUARIO e REPOSITORIO):
-```bash
-git init
-git add .
-git commit -m "Cria landing page Morada em React"
-git branch -M main
-git remote add origin https://github.com/USUARIO/REPOSITORIO.git
-git push -u origin main
+## 📂 Estrutura
+
+```text
+src/
+├── main.jsx
+└── styles.css
+
+public/
+└── favicon.svg
+
+.github/
+└── workflows/
+    └── deploy.yml
 ```
-3. No repositório, entre em **Settings → Pages → Build and deployment → Source** e selecione **GitHub Actions**.
-4. Na aba **Actions**, execute o fluxo **Publicar no GitHub Pages**, se necessário.
-5. Aguarde o sucesso do fluxo e abra o endereço exibido em Pages.
 
-A configuração `base: './'` permite hospedar também em subpastas de repositórios. O workflow compila e publica o diretório dist.
-Referência: https://vite.dev/guide/static-deploy#github-pages
+## ⚠️ Observações
 
-## Estrutura
-- src/main.jsx: componentes React, catálogo e interações.
-- src/styles.css: identidade visual e media queries.
-- public/favicon.svg: ícone local.
-- .github/workflows/deploy.yml: publicação automatizada.
-- APRESENTACAO.md: roteiro para apresentação.
+* Não possui back-end ou banco de dados.
+* O formulário é apenas demonstrativo.
+* Favoritos não são armazenados permanentemente.
+* Imóveis, preços e marca são fictícios.
+
+## 👥 Equipe
+
+A ser definido pela equipe.
+
+## 📈 Status
+
+**Concluído — Projeto acadêmico / Landing Page**
+
+## 📄 Licença
+
+A ser definido pela equipe.
