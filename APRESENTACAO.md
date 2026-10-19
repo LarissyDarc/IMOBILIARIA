@@ -6,5 +6,6 @@
 5. **Responsividade e acessibilidade (40 s):** reduzir a largura do navegador, mostrar o menu móvel e os cartões em uma coluna. Demonstrar navegação por Tab e fechar detalhes com Escape.
 6. **Publicação (30 s):** mostrar o endereço do GitHub Pages e o fluxo que compila o React com Vite e publica os arquivos estáticos.
 7. **Evolução (20 s):** integração com catálogo real, backend de contato e persistência dos favoritos.
+8. **Modelo de dados (20 s):** explicar que o catálogo foi padronizado com slug, título, status, endereço, comodidades e mídia para facilitar manutenção e crescimento do projeto.
 
 Antes de apresentar: executar npm run build, verificar conexão para fotos/fontes, testar busca vazia, modo celular e link público. Não apresentar imóveis fictícios como ofertas reais.
