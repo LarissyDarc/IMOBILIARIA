@@ -8,3 +8,12 @@
 
 
 
+
+/* Ajustes responsivos e estados de foco da grelha de imóveis. */
+.property-grid{grid-template-columns:repeat(auto-fill,minmax(min(100%,280px),1fr))}
+.property-card:focus-within,.featured-card:focus-within{transform:translateY(-3px);box-shadow:var(--shadow-strong)}
+.property-card,.featured-card,.pill,.clear-filter,.property-bottom button{transition:transform .2s ease,box-shadow .2s ease,background-color .2s ease,color .2s ease}
+.pill:hover,.clear-filter:hover,.property-bottom button:hover{transform:translateY(-1px)}
+@media(max-width:768px){.listing-toolbar{align-items:stretch;flex-direction:column}.pills{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px}.pill{min-height:44px;padding:10px 14px}.clear-filter{min-height:44px;justify-content:center}.search-fields{grid-template-columns:1fr;gap:14px}.search-fields label{border-right:0;border-bottom:1px solid var(--border-color);padding:0 0 12px}.search-button{width:100%;min-height:48px}}
+@media(max-width:480px){.property-grid{grid-template-columns:minmax(0,1fr)}.container{width:calc(100% - 36px)}}
+@media(prefers-reduced-motion:reduce){.property-card,.featured-card,.pill,.clear-filter,.property-bottom button{transition:none!important}.property-card:hover,.featured-card:hover,.property-card:focus-within,.featured-card:focus-within,.pill:hover,.clear-filter:hover,.property-bottom button:hover{transform:none}}
