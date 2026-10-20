@@ -77,8 +77,15 @@ export default function App() {
       message: 'Olá! Tenho interesse no imóvel ' + getPropertyTitle(property) + '. Gostaria de saber mais.'
     }));
     setSent(false);
+    dialog.current?.close();
     setSelected(null);
-    document.getElementById('contato')?.scrollIntoView({ behavior: 'smooth' });
+    window.requestAnimationFrame(() => {
+      document.body.style.overflow = '';
+      document.getElementById('contato')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      window.setTimeout(() => {
+        document.querySelector('#contato textarea')?.focus({ preventScroll: true });
+      }, 450);
+    });
   };
 
   const selectedPropertyPanel = selected ? (() => {
