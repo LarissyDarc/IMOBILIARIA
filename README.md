@@ -1,80 +1,61 @@
-# Morada · Imobiliária
-Landing page responsiva em React e Vite, criada para apresentação acadêmica.
+# 🏠 Morada · Imobiliária
 
-## Executar
-Requisito: Node.js 22.
+Landing page responsiva desenvolvida com **React e Vite** para apresentação acadêmica.
+
+## 🎓 Identificação Acadêmica
+
+- **Instituição:** Senac Taguatinga
+- **Curso:** Técnico de Desenvolvimento de Sistema
+- **Disciplina:** Projeto Entregador
+- **Orientador:** Profº Hudson Neves
+
+## 🚀 Funcionalidades
+
+- Busca e filtros de imóveis.
+- Categorias de casas, apartamentos e favoritos.
+- Modal com detalhes dos imóveis.
+- Formulário demonstrativo de interesse.
+- Layout responsivo para dispositivos móveis e desktops.
+- Publicação no GitHub Pages.
+
+## 🛠️ Tecnologias
+
+React, Vite, JavaScript, CSS e GitHub Pages.
+
+## ▶️ Como Executar
+
+**Requisito:** Node.js 22.
+
 ```bash
 npm install
 npm run dev
 ```
-Abra o endereço indicado no terminal. Para conferir a versão de produção:
+
+Para testar a versão de produção:
+
 ```bash
 npm run build
 npm run preview
 ```
 
-## Funcionalidades
-- Busca por finalidade (comprar/alugar), bairro, tipo e preço máximo.
-- Filtros de casas, apartamentos e favoritos.
-- Detalhes de imóveis em janela modal, com fechamento por Escape.
-- Botão de interesse que preenche a mensagem no formulário.
-- Formulário demonstrativo com validação nativa.
-- Menu para celular, links internos, foco visível e suporte a movimento reduzido.
-- Layout adaptado para celular, tablet e desktop.
-- Estrutura do catálogo em schema de domínio padronizado: slug, título, localização, status, comodidades, mídias e métricas de imóvel.
+## 📂 Estrutura
 
-Os favoritos existem apenas durante a sessão da página. Não há backend; o formulário não envia nem armazena dados. A marca, os imóveis e os preços são fictícios. Fotografias ilustrativas remotas do Unsplash; fontes do Google Fonts, com fontes locais de fallback.
-
-## Modelo de dados
-O catálogo foi organizado em um schema escalável para manter consistência e reduzir retrabalho em projetos reais.
-
-```js
-{
-  id: 1,
-  slug: 'casa-jardim-dos-sonhos',
-  title: 'Casa Jardim dos Sonhos',
-  name: 'Casa Jardim dos Sonhos',
-  type: 'Casa',
-  purpose: 'Comprar',
-  status: 'Disponível',
-  area: 'Lago Sul',
-  neighborhood: 'Lago Sul',
-  city: 'Brasília',
-  state: 'DF',
-  price: 1850000,
-  beds: 3,
-  bathrooms: 4,
-  cars: 2,
-  size: 240,
-  image: 'photo-...',
-  images: ['photo-...', 'photo-...'],
-  amenities: ['jardim', 'piscina', 'segurança']
-}
+```text
+src/
+├── main.jsx
+└── styles.css
+public/
+└── favicon.svg
 ```
 
-Esse padrão assegura evolução sem quebrar a camada de apresentação, já que os campos legados continuam compatíveis com a interface atual.
+## ⚠️ Observações
 
-## Publicar no GitHub Pages
-1. Crie um repositório público no GitHub.
-2. Na pasta do projeto, execute (substitua USUARIO e REPOSITORIO):
-```bash
-git init
-git add .
-git commit -m "Cria landing page Morada em React"
-git branch -M main
-git remote add origin https://github.com/USUARIO/REPOSITORIO.git
-git push -u origin main
-```
-3. No repositório, entre em **Settings → Pages → Build and deployment → Source** e selecione **GitHub Actions**.
-4. Na aba **Actions**, execute o fluxo **Publicar no GitHub Pages**, se necessário.
-5. Aguarde o sucesso do fluxo e abra o endereço exibido em Pages.
+Projeto demonstrativo com imóveis e preços fictícios. Não possui back-end, e o formulário não envia nem armazena dados.
 
-A configuração `base: './'` permite hospedar também em subpastas de repositórios. O workflow compila e publica o diretório dist.
-Referência: https://vite.dev/guide/static-deploy#github-pages
+## 📈 Status
 
-## Estrutura
-- src/main.jsx: componentes React, catálogo e interações.
-- src/styles.css: identidade visual e media queries.
-- public/favicon.svg: ícone local.
-- .github/workflows/deploy.yml: publicação automatizada.
-- APRESENTACAO.md: roteiro para apresentação.
+**Em desenvolvimento — MVP acadêmico.**
+
+## 📄 Licença
+
+A definir pela equipe.
